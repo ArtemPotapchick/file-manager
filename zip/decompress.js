@@ -14,7 +14,6 @@ const decompress = async (source,dest) => {
     ).createWriteStream();
     await pipeline(readStream,brotli, writeStream);
   } catch (e) {
-    console.log(e);
     console.log('Operation failed!');
   }
 };
