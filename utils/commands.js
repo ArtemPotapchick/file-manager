@@ -6,7 +6,7 @@ const commands = {
   username: /os --username/,
   architecture: /os --architecture/,
   cpus:/os --cpus/,
-  eol:/os --eol/,
+  eol:/os --EOL/,
   hash: /hash \p{L}+/gu,
   cat: /cat \p{L}+/gu,
   create: /add \p{L}+/gu,

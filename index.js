@@ -1,4 +1,5 @@
 import * as os from 'os';
+import {cpus} from 'os';
 import * as readline from "readline";
 import listFiles from "./nav/list.js";
 import navigateTo from "./nav/navigation.js";
@@ -114,7 +115,7 @@ rl.on('line', async (line) => {
       break;
     }
     case commands.cpus.test(str): {
-      console.log(os.cpus());
+      console.log(cpus());
       break;
     }
     case commands.eol.test(str): {
