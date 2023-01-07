@@ -1,0 +1,20 @@
+const commands = {
+  cd: /cd \p{L}+/gu,
+  ls: /ls/,
+  up: /up/,
+  homedir: /os --homedir/,
+  username: /os --username/,
+  architecture: /os --architecture/,
+  cpus:/os --cpus/,
+  eol:/os --EOL/,
+  hash: /hash \p{L}+/gu,
+  cat: /cat \p{L}+/gu,
+  create: /add \p{L}+/gu,
+  rename: /rn \p{L}+/gu,
+  remove: /rm \p{L}+/gu,
+  copy: /cp \p{L}+/gu,
+  move: /mv \p{L}+/gu,
+  compress: /compress \p{L}+/gu,
+  decompress: /decompress \p{L}+/gu,
+};
+export default commands;
